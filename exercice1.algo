@@ -1,0 +1,32 @@
+ALGORITHM algorithm_name
+VAR
+    C : CHAR;
+    long, mot, nbvoy : INTEGER;
+
+BEGIN
+   long:= 0;
+   mot:= 1;
+   nbvoy:= 0;
+
+   read(C)
+   while C <> '.' do
+        long := long + 1
+        if c = ' ' then
+        mot := mot + 1
+        endif
+
+        if c =  'a, e , o , i ,u , y' then
+        nbvoy := nbvoy + 1
+        endif
+
+        read(C)
+    
+    Endwhile
+
+    write (long);
+    write (mot);
+    nbvoy(nbvoy);
+    
+
+
+END
