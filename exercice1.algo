@@ -1,22 +1,23 @@
 ALGORITHM algorithm_name
 VAR
     C : CHAR;
-    long, mot, nbvoy : INTEGER;
+    long: INTEGER := 0 ;
+    mot: INTEGER := 1;
+    nbvoy:INTEGER := 0;
 
 BEGIN
-   long:= 0;
-   mot:= 1;
-   nbvoy:= 0;
-
+ 
    read(C)
-   while C <> '.' do
+
+   while (C <> '.') do
         long := long + 1
         if c = ' ' then
         mot := mot + 1
         endif
 
-        if c =  'a, e , o , i ,u , y' then
+        if ( c = 'a' or c = 'i' or c = 'e' or c = 'u' or c = 'o' ) then
         nbvoy := nbvoy + 1
+
         endif
 
         read(C)
